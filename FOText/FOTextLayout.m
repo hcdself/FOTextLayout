@@ -299,7 +299,7 @@ static CGColorRef FOTextGetCGColor(CGColorRef color) {
         CTRunGetGlyphs(run, CFRangeMake(0, 0), glyphs);
         CTRunGetPositions(run, CFRangeMake(0, 0), glyphPositions);
         
-        CGColorRef fillColor = (CGColorRef)CFDictionaryGetValue(runAttrs, kCTForegroundColorAttributeName);
+        CGColorRef fillColor = (CGColorRef)CFDictionaryGetValue(runAttrs, NSForegroundColorAttributeName);
         fillColor = FOTextGetCGColor(fillColor);
         NSNumber *strokeWidth = CFDictionaryGetValue(runAttrs, kCTStrokeWidthAttributeName);
         
